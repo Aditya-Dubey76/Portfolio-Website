@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="mediaQueries.css"/>
+    <script src="https://kit.fontawesome.com/cfad7afb5a.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Aditya Dubey</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Aditya Dubey</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section_pic-container">
+        <img src="assets/profile-pic.png" alt="Aditya Dubey" />
+      </div>
+      <div class="section_text">
+        <p class="section_text_p1">Hello, I'm</p>
+        <h1 class="title">Aditya Dubey</h1>
+        <p class="section_text_p2">Data Science Student</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/My_Resume.pdf')">
+            Download Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="social-container">
+          <img
+            src="assets/linkedin.png"
+            alt="My Linkedin Profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/aditya-dubey-93124024a'"/>
+          <img
+            src="assets/github.png"
+            alt="My Github Profile"
+            class="icon"
+            onclick="location.href='https://github.com/Aditya-Dubey76'"/>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section_text_p1">Get To Know More</p>
+      <h1 class="title"><u>About Me</u></h1>
+      <div class="section-container">
+        <div class="section_pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"/>
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"/>
+              <h3>Experience</h3>
+              <p>2+ years <br/>Data Science and AI/ML</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"/>
+              <h3>Education</h3>
+              <p>Bachelor's of Technology in Computer Science (Data Science)<br/>Bennett University
+                (2022-2026)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                Dedicated and passionate student of computer science, presently working on a bachelor's
+                degree with a focus on data science and machine learning. I'm excited to share my love of
+                using cutting-edge technologies and data-driven insights to spur innovation. adept at using
+                programming languages like Python and C++. Looking for chances to use classroom theory to
+                solve practical problems. A proactive learner who is passionate about keeping up with the
+                most recent developments in machine learning and data science. Possesses outstanding
+                problem-solving abilities and a cooperative mindset developed throughout group projects :
+                studies. Devoted to ongoing development and eager to set out on a fulfilling career in the
+                exciting field of data science.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"/>
+    </section>
+
+    <section id="experience">
+      <p class="section_text_p1">Explore My</p>
+      <h1 class="title"><u>Skills</u></h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"/>
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"/>
+                <div>
+                  <h3>C++</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"/>
+                <div>
+                  <h3>Data Analysis</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"/>
+                <div>
+                  <h3>Machine Learning</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"/>
+                <div>
+                  <h3>Artifical Intelligence</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"/>
+                <div>
+                  <h3>MS Excel</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"/>
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"/>
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"/>
+                <div>
+                  <h3>Javascript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"/>
+                <div>
+                  <h3>UI/UX Design</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"/>
+    </section>
+
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title"><u>Projects</u></h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-1.png"
+                  alt="Project-1"
+                  class="project-img"/>
+              </div>
+              <h2 class="experience-sub-title project-title">Iris-Classification</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Aditya-Dubey76/Iris-Classification.git'">
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Aditya-Dubey76/Iris-Classification.git'">
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-2.png"
+                  alt="Project 2"
+                  class="project-img"/>
+              </div>
+              <h2 class="experience-sub-title project-title">Multiple-Disease-Prediction-System-using-ML</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Aditya-Dubey76/Multiple-Disease-Prediction-System-using-ML.git'">
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Aditya-Dubey76/Multiple-Disease-Prediction-System-using-ML.git'">
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-3.png"
+                  alt="Project 3"
+                  class="project-img"/>
+              </div>
+              <h2 class="experience-sub-title project-title">Movie-Recommender-System-using-ML</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Aditya-Dubey76/Movie_Recommender_System_using_ML.git'">
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Aditya-Dubey76/Movie_Recommender_System_using_ML.git'">
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"/>
+    </section>
+
+    <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title"><u>Contact Me</u></h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"/>
+            <p><a href="mailto:dubeyaditya899@gmail.com">dubeyaditya899@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"/>
+            <p><a href="https://www.linkedin.com/in/aditya-dubey-93124024a">LinkedIn</a></p>
+          </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="sec aboutUs">
+                <h2>MESSAGE</h2>
+                <p>Didn't like the way it looks 😔? Let me know your views through the <br>
+                    contact form or drop me a message on my socials mentioned below.
+                    <br>
+                    <br>
+                    As I beleive in the saying, "In the realm of self-improvement,<br>
+                    constructive criticism is the compass guiding me towards the shores of <br>
+                    wisdom"</p>
+                    <ul class="sci">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-snapchat"></i></a></li>
+                    </ul>
+            </div>
+            <div class="sec quickLinks">
+                <h2>MY INTERESTS</h2>
+                <ul>
+                    <li>Data Science</li>
+                    <li>Web Development</li>
+                    <li>Machine Learning</li>
+                    <li>Web Design</li>
+                    <li>DSA</li>
+                </ul>
+            </div>
+            <div class="sec quickLinks">
+                <h2>QUICK LINKS</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <lix<a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyrightText">
+        <p>Copright © 2024 by Aditya Dubey | All Rights Reserved.</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
